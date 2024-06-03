@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const getBuku = async () => {
       try {
-        const response = await axios.get("https://pengunjung-sabkojjhaa-et.a.run.app/buku");
+        const response = await axios.get("https://buku-sabkojjhaa-et.a.run.app/buku");
         tableBuku.innerHTML = "";
         response.data.data.forEach((buku) => {
           const tr = document.createElement("tr");
@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
   
       try {
         if (id) {
-          await axios.put(`https://pengunjung-sabkojjhaa-et.a.run.app/buku/${id}`, { nama, kode_buku: kodeBuku });
+          await axios.put(`https://buku-sabkojjhaa-et.a.run.app/buku/${id}`, { nama, kode_buku: kodeBuku });
         } else {
-          await axios.post("https://pengunjung-sabkojjhaa-et.a.run.app/buku", { nama, kode_buku: kodeBuku });
+          await axios.post("https://buku-sabkojjhaa-et.a.run.app/buku", { nama, kode_buku: kodeBuku });
         }
         form.reset();
         form.removeAttribute("data-id");
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     window.editBuku = async (id) => {
       try {
-        const response = await axios.get(`https://pengunjung-sabkojjhaa-et.a.run.app/buku/${id}`);
+        const response = await axios.get(`https://buku-sabkojjhaa-et.a.run.app/buku/${id}`);
         document.getElementById("nama").value = response.data.data.nama;
         document.getElementById("kode_buku").value = response.data.data.kode_buku;
         form.setAttribute("data-id", id);
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     window.deleteBuku = async (id) => {
       try {
-        await axios.delete(`https://pengunjung-sabkojjhaa-et.a.run.app/buku/${id}`);
+        await axios.delete(`https://buku-sabkojjhaa-et.a.run.app/buku/${id}`);
         getBuku();
       } catch (error) {
         console.error("Error deleting buku:", error);
