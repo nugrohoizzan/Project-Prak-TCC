@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const getPengunjung = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/pengunjung");
+        const response = await axios.get("https://pengunjung-sabkojjhaa-et.a.run.app/pengunjung");
         tablePengunjung.innerHTML = "";
         response.data.data.forEach((pengunjung) => {
           const tr = document.createElement("tr");
@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
   
       try {
         if (id) {
-          await axios.put(`http:localhost:8080/pengunjung/${id}`, { nama, kode_induk: kodeInduk });
+          await axios.put(`https://pengunjung-sabkojjhaa-et.a.run.app/pengunjung/${id}`, { nama, kode_induk: kodeInduk });
         } else {
-          await axios.post("http:localhost:8080/pengunjung", { nama, kode_induk: kodeInduk });
+          await axios.post("https://pengunjung-sabkojjhaa-et.a.run.app/pengunjung", { nama, kode_induk: kodeInduk });
         }
         form.reset();
         form.removeAttribute("data-id");
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     window.editPengunjung = async (id) => {
       try {
-        const response = await axios.get(`http:localhost:8080/pengunjung/${id}`);
+        const response = await axios.get(`https://pengunjung-sabkojjhaa-et.a.run.app/pengunjung/${id}`);
         document.getElementById("nama").value = response.data.data.nama;
         document.getElementById("kode_induk").value = response.data.data.kode_induk;
         form.setAttribute("data-id", id);
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     window.deletePengunjung = async (id) => {
       try {
-        await axios.delete(`http:localhost:8080/pengunjung/${id}`);
+        await axios.delete(`https://pengunjung-sabkojjhaa-et.a.run.app/pengunjung/${id}`);
         getPengunjung();
       } catch (error) {
         console.error("Error deleting pengunjung:", error);
