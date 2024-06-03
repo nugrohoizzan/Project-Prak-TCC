@@ -60,7 +60,7 @@
         background-color: #eee;
         border: none;
         padding: 12px 15px;
-        margin: 6px 0;
+        margin: 3px 0;
         width: 100%;
         font-size: 0.8rem;
       }
@@ -77,34 +77,32 @@
       }
 
       button:hover {
-        background-color: #45a049;
+        background-color: rgb(124, 150, 215);
       }
 
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 1rem;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      opacity: 95%;
+    }
+    tr {
+      background-color: #f5f5f5;
+    }
+    th{
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid rgb(157, 143, 143);
+    }
+    td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+    tr:hover {
+      background-color: #3e7688;
+    }
+  
 
-      th, td {
-        padding: 1rem;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-      }
-
-      th {
-        background-color: #3e7688;
-        color: white;
-      }
-
-      tr:hover {
-        background-color: #f1f1f1;
-      }
-
-      tr:nth-child(even) {
-        background-color: #f9f9f9;
-      }
     </style>
   </head>
   <body>
