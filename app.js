@@ -13,7 +13,7 @@ app.use(express.json());
 app.use("/buku", bukuRouter);
 
 app.get("/", (req, res) => {
-  res.send("Hello from buku-service! 📚");
+  res.send("Selamat datang di buku-service!");
 });
 
 // Listen on the port specified by the PORT environment variable
