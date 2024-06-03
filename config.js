@@ -4,7 +4,7 @@ const config = {
   host: "34.42.154.176",
   user: "root",
   password: "nugrohoizza29",
-  database: "perpus",
+  database: "perpus1",
 };
 
 const connect = mysql.createConnection(config);

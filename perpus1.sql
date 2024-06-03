@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 03, 2024 at 10:26 AM
+-- Generation Time: Jun 03, 2024 at 04:48 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -38,24 +38,15 @@ CREATE TABLE `buku` (
 --
 
 INSERT INTO `buku` (`id`, `nama`, `kode_buku`) VALUES
-(1, 'Buku Pemrograman Python', 'B001'),
-(2, 'Algoritma dan Struktur Data', 'B002'),
-(3, 'Pengantar Basis Data', 'B003'),
-(4, 'Sistem Operasi', 'B004'),
-(5, 'Jaringan Komputer', 'B005'),
-(6, 'Pemrograman Web', 'B006'),
-(7, 'Kecerdasan Buatan', 'B007'),
-(8, 'Pembelajaran Mesin', 'B008'),
-(9, 'Analisis Data', 'B009'),
-(10, 'Pemrograman Java', 'B010'),
-(11, 'Desain dan Analisis Algoritma', 'B011'),
-(12, 'Basis Data Lanjut', 'B012'),
-(13, 'Keamanan Komputer', 'B013'),
-(14, 'Pemrograman C++', 'B014'),
-(15, 'Pengembangan Aplikasi Mobile', 'B015'),
-(16, 'Pemrograman R', 'B016'),
-(17, 'Komputasi Awan', 'B017'),
-(18, 'Internet of Things', 'B018');
+(1, 'The Prequel', 'B001'),
+(2, 'Harry Potter and The Sorcerer\'s stone', 'B002'),
+(3, 'Harry Potter and The Chamber Of Secret', 'B003'),
+(4, 'Harry Potter and The Prisoner of Azkaban', 'B004'),
+(5, 'Harry Potter and The Goblet of Fire', 'B005'),
+(6, 'Harry Potter and The Order of the Phoenix', 'B006'),
+(7, 'Harry Potter and the Half-Blood Prince', 'B007'),
+(8, 'Harry Potter and the Deathly Hallows: Part One', 'B008'),
+(9, 'Harry Potter and the Deathly Hallows: Part Two', 'B009');
 
 -- --------------------------------------------------------
 
@@ -74,24 +65,19 @@ CREATE TABLE `pengunjung` (
 --
 
 INSERT INTO `pengunjung` (`id`, `nama`, `kode_induk`) VALUES
-(1, 'Ahmad Fauzi', 'P001'),
-(2, 'Budi Santoso', 'P002'),
-(3, 'Citra Dewi', 'P003'),
-(4, 'Dewi Ayu', 'P004'),
-(5, 'Eko Prasetyo', 'P005'),
-(6, 'Fajar Nugroho', 'P006'),
-(7, 'Gilang Ramadhan', 'P007'),
-(8, 'Hendra Wijaya', 'P008'),
-(9, 'Ika Sari', 'P009'),
-(10, 'Joko Widodo', 'P010'),
-(11, 'Kiki Amalia', 'P011'),
-(12, 'Lina Marlina', 'P012'),
-(13, 'Maya Indah', 'P013'),
-(14, 'Nana Supriatna', 'P014'),
-(15, 'Oki Setiawan', 'P015'),
-(16, 'Putri Ayu', 'P016'),
-(17, 'Rizky Aditya', 'P017'),
-(18, 'Susi Susanti', 'P018');
+(1, 'Harry Potter', 'H001'),
+(2, 'Hermione Granger', 'H002'),
+(3, 'Ron Weasley', 'H003'),
+(4, 'Draco Malfoy', 'H004'),
+(5, 'Ginny Weasley', 'H005'),
+(6, 'Luna Lovegood', 'H006'),
+(7, 'Neville Longbottom', 'H007'),
+(8, 'Fred Weasley', 'H008'),
+(9, 'George Weasley', 'H009'),
+(10, 'Cedric Diggory', 'H010'),
+(11, 'Oliver Wood', 'H011'),
+(12, 'Seamus Finnigan', 'H012'),
+(13, 'Katie Bell', 'H013');
 
 --
 -- Indexes for dumped tables
