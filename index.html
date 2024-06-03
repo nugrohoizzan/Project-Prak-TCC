@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perpustakaan UPNVY</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+      }
+
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 1rem 0;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      main {
+        margin-top: 2rem;
+      }
+
+      img {
+        margin-top: 1rem;
+      }
+
+      nav {
+        margin-top: 1rem;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #4caf50;
+        font-weight: bold;
+        margin: 0 0.5rem;
+        padding: 0.5rem 1rem;
+        border: 2px solid #4caf50;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      nav a:hover {
+        background-color: #4caf50;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Selamat Datang di Perpustakaan UPNVY</h1>
+    </header>
+    <main>
+      <img
+        height="350"
+        width="350"
+        src="https://storage.cloud.google.com/b-08-lms/book-half.svg"
+        alt="Book Icon"
+      />
+      <p>Pilih Menu</p>
+      <nav>
+        <a href="buku.html">Data Buku</a>
+        <a href="pengunjung.html">Data Pengunjung</a>
+      </nav>
+    </main>
+  </body>
+</html>

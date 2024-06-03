@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengunjung</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+      }
+
+      a {
+        align-self: flex-start;
+        text-decoration: none;
+        color: #4caf50;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        padding: 0.5rem 1rem;
+        border: 2px solid #4caf50;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      a:hover {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      h1 {
+        margin-bottom: 2rem;
+        color: #333;
+      }
+
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
+
+      form span {
+        margin: 0.5rem;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+
+      input {
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 200px;
+      }
+
+      button {
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #4caf50;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      th, td {
+        padding: 1rem;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Kembali</a>
+    <h1>Data Pengunjung</h1>
+    <form>
+      <span>
+        <label for="nama">Nama</label>
+        <input
+          data-id
+          id="nama"
+          type="text"
+          placeholder="Masukkan nama"
+          required
+        />
+      </span>
+      <span>
+        <label for="kode_induk">Kode Induk</label>
+        <input
+          data-id
+          id="kode_induk"
+          type="text"
+          placeholder="Masukkan kode induk"
+          required
+        />
+      </span>
+      <button type="submit">Simpan</button>
+    </form>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nama</th>
+            <th>Kode Induk</th>
+            <th colspan="2">Option</th>
+          </tr>
+        </thead>
+        <tbody id="table-pengunjung"></tbody>
+      </table>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="pengunjung.js"></script>
+  </body>
+</html>
